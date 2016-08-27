@@ -1,0 +1,49 @@
+menu:
+  userguide: 用户手册
+  training: 入门教程
+  samples: 示例
+  news: 新闻
+  blog: 博客
+  about: 关于
+  search: 搜索
+
+index:
+  get_started: 开始使用
+
+page:
+  contents: 目录
+  back_to_top: 回到顶部
+  improve: 改进本文
+  prev: 上一页
+  next: 下一页
+  last_updated: 上次更新：%s
+
+sidebar:
+  training:
+    start: 基础
+    ch1_intro: Gradle介绍
+    ch2_install: 下载和安装
+    ch3_quick_start: 快速入门
+    ch3_01: 项目结构
+    ch3_02: 脚本结构
+    ch3_03: 第一个脚本
+    ch3_04: 打包和运行
+    ch4_repository: 仓库
+    ch4_01: 什么是仓库 
+    ch4_02: 仓库的分类
+    ch4_03: 搭建私有仓库(nexus)
+    ch5_dependency: 依赖
+    ch5_01: 何为依赖
+    ch5_02: 依赖的坐标与范围
+    ch5_03: 依赖的传递与排除
+    ch5_04: 依赖的更新与缓存
+    ch5_05: 依赖的上传与发布
+    ch14_integration: IDE集成
+    ch14_01: 与IDEA集成
+    ch14_02: 与eclipse集成
+    appendix: 附录
+    appendix_a: 附录 A-Gradle命令详解
+    others: 其它
+    miscellaneous: 其他
+    troubleshooting: 寻求帮助
+    contributing: 贡献

@@ -1,0 +1,35 @@
+title: Gradle 中文用户组
+subtitle: "一款简洁而优雅的构建工具."
+description: "基于groovy DSL的后现代脚本化构建工具."
+author: PKAQ
+language: zh-cn
+timezone: UTC
+url: https://gradlecn.org
+root: /
+permalink: news/:year/:month/:day/:title/
+archive_dir: news
+code_dir: downloads/code
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+post_asset_folder: true
+highlight:
+  enable: true
+  line_number: false
+per_page: 0
+
+theme: navy
+deploy:
+  type: git
+  repo: https://github.com/gradlecn/gradlecn.github.io.git
+
+disqus_shortname: hexojs
+google_analytics: UA-4910098-10
+fb_admins: 100000247608790
+algolia:
+  zh-tw:
+    api_key: c83d2ec3440f40aec6d0e695ecec7ef3
+    index_name: hexo_zh-tw
+  zh-cn:
+    api_key: cdea7d4e47d84f6145b77e7f68689f35
+    index_name: hexo_zh-cn
+twitter: gradlecn
+github: gradle/gradle

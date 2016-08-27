@@ -1,0 +1,28 @@
+training:
+  start:
+    ch1_intro: /training/ch1/intro.html
+    ch2_install: /training/ch2/install.html
+  ch3_quick_start:
+    ch3_01: /training/ch3/projectstrure.html
+    ch3_02: /training/ch3/scriptstructure.html
+    ch3_03: /training/ch3/fisrtblood.html
+    ch3_04: /training/ch3/run.html
+  ch4_repository:
+    ch4_01: /training/ch4/wtf.html
+    ch4_02: /training/ch4/type.html
+    ch4_03: /training/ch4/nexus.html
+  ch5_dependency: 
+    ch5_01: /training/ch5/wtf.html
+    ch5_02: /training/ch5/gav.html
+    ch5_03: /training/ch5/transitive.html
+    ch5_04: /training/ch5/updateandcache.html
+    ch5_05: /training/ch5/release.html
+  ch14_integration: 
+    ch14_01: /training/ch14/idea.html
+    ch14_02: /training/ch14/eclipse.html
+  appendix: 
+    appendix_a: /training/appendix/command.html
+  others:
+    miscellaneous: /training/tag.html
+    troubleshooting: /training/troubleshooting.html
+    contributing: /training/contributing.html

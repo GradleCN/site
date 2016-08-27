@@ -1,0 +1,44 @@
+title: 什么是依赖管理
+---
+
+#### 什么是依赖管理
+　　通常而言，依赖管理包括两部分，对依赖的管理以及发布物的管理；依赖是指构建项目所需的构件(jar包等)。例如，对于一个应用了spring普通的java web项目而言，spring相关jar包即项目所需的依赖。发布物，则是指项目产出的需要上传的项目产物。
+   
+#### 传统依赖管理的痛点　　
+　　毋庸置疑，几乎绝大多数项目都会或多或少的依赖于第三方库，尤其像log4j、dom4j、common-long、guava这类的三方库。传统情况下我们通常会去网络上自己搜寻这些依赖并把他们下载到WEB-INF/lib下来维护和管理这些三方类库。然而随着项目的推进和时间的推移以及人员的更迭，维护和管理这些依赖就会逐渐变成一件令人头疼的事情。
+
+- 想要知道每个jar文件的作用，以及每个jar文件依赖的其它类库，或者升级更新某个jar文件的版本。
+- jar文件会随着项目源代码一起提交到版本控制系统，如果n个项目同时用了log4j那么自己的磁盘以及版本控制系统即存在n份相同的文件，额外占据了大量存储空间。
+
+#### 自动化依赖管理
+　　不得不说maven的出现使得开发人员从头疼的依赖管理工作中解放了出来，它通过XML的形式来声明项目所需的依赖以及依赖生效的范围，只需一个简单的命令便会自动去帮你寻找和下载所需的依赖以及依赖所需的依赖（即传递性依赖），然而如果一个项目依赖众多并且需要一些额外的处理工作，那么一份冗长的XML配置文件仍然会让你觉得头疼不已。
+　　Gradle可以说很大程度上完成了maven可以做的所有工作，并且通过灵活的DSL配置还可以完成更多。当然不同于XML的繁琐，Gradle采用更简洁的方式来配置所需的依赖，如以下列举的maven与gradle声明依赖的代码即可看出Gradle是有多么的优雅和简洁。
+**采用maven配置所需依赖**
+```xml
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>4.3.0.RELEASE</version>
+</dependency>
+```
+**采用gradle配置所需依赖**
+```groovy	
+compile 'org.springframework:spring-core:4.3.0.RELEASE'
+```
+　　是的，你只需要一行代码即可完成maven用3行代码完成的事情（当然如果你要说去掉换行也可以达到一行效果的话，那我就无言以对了）
+#### 自动化依赖管理带来的优势
+　　可以看到，采用自动化依赖管理后，我们只需要在脚本文件里按照相应的规范书写依赖标识即可轻松完成依赖的管理。
+  
+- 构建工具会依据你所配置的仓库去搜寻所需依赖，并将这些依赖缓存到本地便于其它项目使用，对，便于其它项目使用，也就是说完全相同的依赖你的磁盘只需要存在一份就可以了。
+- 采用自动化依赖管理带来的好处就是，无需关心依赖所需的其它依赖（即传递性依赖），比如hibernate-core又依赖了dom4j，那么无需配置dom4j，构建工具会自动发现传递性依赖并将这些传递性依赖一并下载到本地磁盘。
+- 采用自动化依赖管理，可以方便的对依赖版本进行管理，需要升级的时候只需要改一下脚本中的版本号即可，也可以通过定义版本号变量的形式，使多个依赖引用这一变量，做到版本号的统一控制。
+  
+**采用变量统一控制版本号**
+```groovy
+dependencies {
+	def bootVersion = "1.3.5.RELEASE"
+    compile     "org.springframework.boot:spring-boot-starter-web:${bootVersion}",  
+                "org.springframework.boot:spring-boot-starter-data-jpa:${bootVersion}",
+                "org.springframework.boot:spring-boot-starter-tomcat:${bootVersion}"
+}
+```
