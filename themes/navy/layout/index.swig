@@ -13,7 +13,30 @@
   <div class="wrapper">
     <div class="inner">
       <h1> </h1>
-      <h1> </h1>
+      <!-- 版本发布说明 -->
+       <div class="ui vertical stripe segment margin30" style="margin:30px 0;">
+          <div class="ui aligned centered stackable two column grid container">
+	          <div class="column">
+         	  	 {% for post in site.posts %}         	  	 
+			         {% if loop.index <= 5 %}
+			            <a class="archive-post-link" href="{{ url_for(post.path) }}">
+			              <strong class="archive-post-title" itemprop  ="name">{{ post.title}}</strong>			             
+			              <span class="archive-post-date">{{ date(post.date) }}</span>	              
+			            </a>		          
+		        	  {% endif %}
+		          {% endfor %}
+	          </div>
+	          <div class="column">
+	            <h3>
+	              乐享自动化构建带来的喜悦<br /> <small>Realize Build Happiness.</small>
+	            </h3>
+	            <p>现在你可以借助Gradle脱离构建所带来的痛苦，一个现代化的、开源的、支持多语种的构建系统。<br>通过简洁的脚本语言可以很容易的集成到你的DevOps工具链中，终结长时间构建，终结代码冻结，结束死亡之旅，<br>终结缺陷回归带来的痛苦，将支离破碎的发布过程有序的统一起来。</p>
+	          </div>
+         </div>
+  	  </div>
+       
+      <!--//END 版本发布说明 -->
+
       <!-- 广告 -->
       {{ page.content }}
 
