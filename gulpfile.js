@@ -1,72 +1,35 @@
 'use strict';
 
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
-var cssnano = require('cssnano');
-
-var dirs = {
-  public: 'public',
-  screenshots: 'public/build/screenshots'
-};
-
-gulp.task('useref', ['screenshot'], function(){
-  var assets = $.useref.assets({
-    searchPath: 'public'
-  });
-
-  return gulp.src('public/**/*.html')
-    .pipe(assets)
-    .pipe($.uniqueFiles())
-    .pipe($.if('*.css', $.postcss([
-      cssnano()
-    ])))
-    .pipe($.if('*.js', $.uglify()))
-    .pipe($.rev())
-    .pipe(assets.restore())
-    .pipe($.useref())
-    .pipe($.revReplace({
-      prefix: '/'
-    }))
-    .pipe(gulp.dest('public'));
+var gulp = require('gulp'),
+	uglify = require('gulp-uglify'),
+    rename = require('gulp-rename'),
+    cssmin = require('gulp-minify-css'),
+    imagemin = require('gulp-imagemin');
+//JS压缩
+gulp.task('uglify', function() {
+    return gulp.src('././public/js/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('././public/js/'));
+});
+//CSS压缩
+gulp.task('cssmin', function() {
+    return gulp.src('././public/css/navy.css')
+        .pipe(cssmin())
+        .pipe(gulp.dest('././public/css/'));
+});
+//CSS压缩
+gulp.task('vendorcss', function() {
+    return gulp.src('././public/vendors/*.css')
+        .pipe(cssmin())
+        .pipe(gulp.dest('././public/vendors/'));
+});
+//图片压缩
+gulp.task('images', function() {
+    gulp.src('././public/css/img/*.*')
+        .pipe(imagemin({
+            progressive: false
+        }))
+        .pipe(gulp.dest('././public/css/img/'));
 });
 
-gulp.task('screenshot:rev', function(){
-  return gulp.src('public/themes/screenshots/*.png')
-    .pipe($.rev())
-    .pipe(gulp.dest(dirs.screenshots))
-    .pipe($.rev.manifest())
-    .pipe(gulp.dest(dirs.screenshots));
-});
-
-gulp.task('screenshot:resize', ['screenshot:rev'], function(){
-  return gulp.src(dirs.screenshots + '/*.png')
-    .pipe($.responsive({
-      '*.png': [
-        {
-          width: 400,
-          progressive: true
-        },
-        {
-          progressive: true,
-          rename: {
-            suffix: '@2x'
-          }
-        }
-      ]
-    }))
-    .pipe(gulp.dest(dirs.screenshots));
-});
-
-gulp.task('screenshot:revreplace', ['screenshot:rev'], function(){
-  return gulp.src([dirs.screenshots + '/rev-manifest.json', 'public/themes/index.html'])
-    .pipe($.revCollector({
-      replaceReved: true,
-      dirReplacements: {
-        '/themes/screenshots': '/build/screenshots'
-      }
-    }))
-    .pipe(gulp.dest('public/themes'));
-});
-
-gulp.task('screenshot', ['screenshot:rev', 'screenshot:resize', 'screenshot:revreplace']);
-gulp.task('default', ['useref', 'screenshot']);
+gulp.task('build', ['uglify', 'vendorcss', 'cssmin', 'images']);
