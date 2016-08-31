@@ -17,7 +17,7 @@
        <div class="ui vertical stripe segment margin30" style="margin:30px 0;">
           <div class="ui aligned centered stackable two column grid container">
 	          <div class="column">
-         	  	 {% for post in site.posts %}         	  	 
+        	  	 {% for post in site.posts %}         	  	 
 			         {% if loop.index <= 5 %}
 			            <a class="archive-post-link" href="{{ url_for(post.path) }}">
 			              <strong class="archive-post-title" itemprop  ="name">{{ post.title}}</strong>			             
