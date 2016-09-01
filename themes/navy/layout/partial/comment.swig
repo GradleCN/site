@@ -1,18 +1,20 @@
-{% if page.comments && config.disqus_shortname %}
-<section id="comments">
-  <div id="disqus_thread"></div>
-</section>
-<script>
-  var disqus_shortname = '{{ config.disqus_shortname }}';
-  var disqus_url = '{{ url }}';
-  var disqus_title = {{ JSON.stringify(page.title) }};
-  var disqus_config = function(){
-    this.language = '{{ disqus_lang() }}';
-  };
-  (function(){
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = 'https://go.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
+{% if page.comments && config.duoshuo %}
+  {% if config.duoshuo %}
+    {% set duoshuo_shortname = config.duoshuo.shortname %}
+  {% else %}
+    {% set duoshuo_shortname = config.duoshuo_shortname %}
+  {% endif %}
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"{{duoshuo_shortname}}"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 {% endif %}

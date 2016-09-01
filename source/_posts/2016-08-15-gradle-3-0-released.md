@@ -1,4 +1,5 @@
 title: Gradle 3.0  正式发布.
+comments: true
 ---
 Version 3.0
 

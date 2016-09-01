@@ -38,7 +38,7 @@
 				    <div class="content"> 全面支持已有的maven和ivy仓库 </div>
 				  </div>
 				  <div class="item">
-				    <i class="mail icon"></i>
+				    <i class="attach icon"></i>
 				    <div class="content">  强大的多工程构建支持   </div>
 				  </div>
 				  <div class="item">
