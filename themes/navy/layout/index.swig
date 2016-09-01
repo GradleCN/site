@@ -27,10 +27,25 @@
 		          {% endfor %}
 	          </div>
 	          <div class="column">
-	            <h3>
-	              乐享自动化构建带来的喜悦<br /> <small>Realize Build Happiness.</small>
-	            </h3>
-	            <p>现在你可以借助Gradle脱离构建所带来的痛苦，一个现代化的、开源的、支持多语种的构建系统。<br>通过简洁的脚本语言可以很容易的集成到你的DevOps工具链中，终结长时间构建，终结代码冻结，结束死亡之旅，<br>终结缺陷回归带来的痛苦，将支离破碎的发布过程有序的统一起来。</p>
+
+	          <div class="ui list">
+				  <div class="item">
+				    <i class="users icon"></i>
+				    <div class="content">一个非常灵活的通用构建工具 </div>
+				  </div>
+				  <div class="item">
+				    <i class="marker icon"></i>
+				    <div class="content"> 全面支持已有的maven和ivy仓库 </div>
+				  </div>
+				  <div class="item">
+				    <i class="mail icon"></i>
+				    <div class="content">  强大的多工程构建支持   </div>
+				  </div>
+				  <div class="item">
+				    <i class="linkify icon"></i>
+				    <div class="content"> 强大的依赖管理 支持传递性依赖管理 </div>
+				  </div>
+				</div>	                  
 	          </div>
          </div>
   	  </div>
