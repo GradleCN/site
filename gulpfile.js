@@ -25,7 +25,7 @@ gulp.task('vendorcss', function() {
 });
 //图片压缩
 gulp.task('images', function() {
-    gulp.src('././public/css/img/*.*')
+    gulp.src('././public/css/img/**/*.*')
         .pipe(imagemin({
             progressive: false
         }))

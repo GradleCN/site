@@ -1,4 +1,4 @@
-title: Gradle 3.0 ·¢²¼
+title: Gradle 3.0  æ­£å¼å‘å¸ƒ.
 ---
 Version 3.0
 

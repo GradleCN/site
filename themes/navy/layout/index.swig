@@ -71,41 +71,41 @@
             <div class="ui aligned centered stackable six column grid container">
             <!-- 第一行 -->
               <div class="column">
-              <img src="http://gradle.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/Team16-Motorola.svg" style="width: 150px; height: 50px;">
+              <img src="{{ url_for('css/img/logos/Team16-Motorola.svg') }}" style="width: 150px; height: 50px;">
               </div>
               <div class="column">
-                    <img src="http://gradle.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/Team1-Apple.svg" style="width: 150px; height: 50px;">
+                    <img src="{{ url_for('css/img/logos/Team1-Apple.svg') }}" style="width: 150px; height: 50px;">
               </div>
               <div class="column">
-                <img src="http://gradle.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/Team2-Google.svg" style="width: 150px; height: 50px;">
+                <img src="{{ url_for('css/img/logos/Team2-Google.svg') }}" style="width: 150px; height: 50px;">
               </div>
               <div class="column">
-                <img src="http://gradle.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/Team-Android.svg" style="width: 150px; height: 50px;">
+                <img src="{{ url_for('css/img/logos/Team-Android.svg') }}" style="width: 150px; height: 50px;">
               </div>
             <div class="column">
-                <img src="http://gradle.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/Team4-LinkedIn.svg" style="width: 150px; height: 50px;">
+                <img src="{{ url_for('css/img/logos/Team4-LinkedIn.svg') }}" style="width: 150px; height: 50px;">
               </div>
               <div class="column">
-                <img src="http://gradle.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/Team5-Netflix.svg" style="width: 150px; height: 50px;">
+                <img src="{{ url_for('css/img/logos/Team5-Netflix.svg') }}" style="width: 150px; height: 50px;">
               </div>
             <!-- 第二行 -->
             <div class="column">
-                <img src="http://gradle.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/Team6-Unity.svg" style="width: 150px; height: 50px;">
+                <img src="{{ url_for('css/img/logos/Team6-Unity.svg') }}" style="width: 150px; height: 50px;">
               </div>
               <div class="column">
-                  <img src="http://gradle.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/Team7-Prezi.svg" style="width: 150px; height: 50px;">
+                  <img src="{{ url_for('css/img/logos/Team7-Prezi.svg') }}" style="width: 150px; height: 50px;">
               </div>
               <div class="column">
-                <img src="http://gradle.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/Team8-Twitter.svg" style="width: 150px; height: 50px;">
+                <img src="{{ url_for('css/img/logos/Team8-Twitter.svg') }}" style="width: 150px; height: 50px;">
               </div>
               <div class="column">
-              <img src="http://gradle.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/Team9-Gap.svg" style="width: 150px; height: 50px;">
+              <img src="{{ url_for('css/img/logos/Team9-Gap.svg') }}" style="width: 150px; height: 50px;">
               </div>
             <div class="column">
-              <img src="http://gradle.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/Team10-Oracle.svg" style="width: 150px; height: 50px;">
+              <img src="{{ url_for('css/img/logos/Team10-Oracle.svg') }}" style="width: 150px; height: 50px;">
               </div>
               <div class="column">
-                <img src="http://gradle.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/Team12-ATT.png" style="width: 150px; height: 50px;">
+                <img src="{{ url_for('css/img/logos/Team12-ATT.png') }}" style="width: 150px; height: 50px;">
               </div>
           </div>
         </div>
