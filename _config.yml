@@ -22,7 +22,7 @@ deploy:
   repo: https://github.com/gradlecn/gradlecn.github.io.git
 
 duoshuo: 
-	shortname: gradlecn
+	shortname: gradlecn.duoshuo.com
 google_analytics: UA-4910098-10
 fb_admins: 100000247608790
 algolia:
