@@ -1,6 +1,6 @@
 title: 友情捐助
 layout: page
-comments: false
+comments: true
 ---
 
 <style>
