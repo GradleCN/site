@@ -25,10 +25,10 @@ duoshuo:
 	shortname: gradlecn
 google_analytics: UA-83547859-1
 baidu_tongji: bf6e697caf3835a8aff823ecf72044c5
-fb_admins: 100000247608790
-algolia:
-  zh-cn:
-    api_key: 833e76b8e5868b5ca61c5725dcabe526
-    index_name: gradle_zh-cn
+#fb_admins: 100000247608790
+#algolia:
+#  zh-cn:
+#    api_key: 833e76b8e5868b5ca61c5725dcabe526
+#    index_name: gradle_zh-cn
 twitter: gradlecn
 github: gradle/gradle

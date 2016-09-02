@@ -24,7 +24,9 @@
 	<link href="{{ url_for('vendors/jquery.terminal-0.9.3.css') }}" rel="stylesheet" type="text/css"/>
   <link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
   <link href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  -->
   <!-- RSS -->
   {{ feed_tag('atom.xml') }}
   <!-- Open Graph -->

@@ -7,12 +7,14 @@
       <a href="#" class="main-nav-link" alt="(建设中)">用户手册</a>
       {{ header_menu('main-nav') }}
       <a href="https://github.com/{{ config.github }}" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <!-- 
       <div id="search-input-wrap">
         <div id="search-input-icon">
           <i class="fa fa-search"></i>
         </div>
         <input type="search" id="search-input" placeholder="Search...">
       </div>
+      -->
     </nav>
     <div id="lang-select-wrap">
       <label id="lang-select-label"><i class="fa fa-globe"></i><span>{{ lang_name(page.lang) }}</span></label>
