@@ -34,4 +34,7 @@
   }) }}
   <!-- Google Analytics -->
   {{ partial('google_analytics') }}
+  
+  <!-- baidu tongji -->
+  {{ partial('baidu_tongji') }}
 </head>
