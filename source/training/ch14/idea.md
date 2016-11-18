@@ -1,4 +1,4 @@
-title: 与IDEA集成
+title: IDEA中Gradle插件的使用
 ---
 
 #### IDEA中Gradle插件的使用
