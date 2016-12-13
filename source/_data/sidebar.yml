@@ -17,6 +17,13 @@ training:
     ch5_03: /training/ch5/transitive.html
     ch5_04: /training/ch5/updateandcache.html
     ch5_05: /training/ch5/release.html
+  ch8_multiproject:
+    ch8_01: /training/ch8/multiproject.html
+    ch8_02: /training/ch8/structure.html
+    ch8_03: /training/ch8/settingsscript.html
+    ch8_04: /training/ch8/buildscript.html
+    ch8_05: /training/ch8/separate.html
+    ch8_06: /training/ch8/flatandhierarchical.html
   ch14_integration: 
     ch14_01: /training/ch14/idea.html
     ch14_02: /training/ch14/eclipse.html

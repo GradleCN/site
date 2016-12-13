@@ -1,21 +1,21 @@
 menu:
-  userguide: 用戶手冊
-  training: 入門教程
+  userguide: 用户手册
+  training: 入门教程
   samples: 示例
-  news: 新聞
+  news: 新闻
   blog: 博客
   about: 关于
   search: 搜索
 
 index:
-  get_started: 開始使用
+  get_started: 开始使用
 
 page:
-  contents: 目錄
-  back_to_top: 回到頂部
-  improve: 改進本文
-  prev: 上一頁
-  next: 下一頁
+  contents: 目录
+  back_to_top: 回到顶部
+  improve: 改进本文
+  prev: 上一页
+  next: 下一页
   last_updated: 上次更新：%s
 
 sidebar:
@@ -38,6 +38,13 @@ sidebar:
     ch5_03: 依赖的传递与排除
     ch5_04: 依赖的更新与缓存
     ch5_05: 依赖的上传与发布
+    ch8_multiproject: 多模块项目构建
+    ch8_01: 概述
+    ch8_02: 结构
+    ch8_03: settings文件
+    ch8_04: build文件
+    ch8_05: 配置分离
+    ch8_06: 水平布局和分层布局
     ch14_integration: IDE集成
     ch14_01: 与IDEA集成
     ch14_02: 与eclipse集成

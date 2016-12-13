@@ -52,6 +52,9 @@ Mars (4.5)      | release   | `http://download.eclipse.org/buildship/updates/e45
  当然控制台也会打印执行的详细信息
  ![](eclipse/main3.jpg)
  
+### 刷新依赖(新增/修改/删除依赖导入)
+对脚本做了编辑之后，记得在项目上点击`右键->Gradle->refresh Gradle project`刷新下依赖。
+ 
 ### 补充
   插件自带的编辑器是没有语法着色的,可以安装下面这个,可以对关键字进行高亮展示.当然,语法提示的话,肯定是没有的
  ![](eclipse/editor.jpg)

@@ -2,7 +2,7 @@ title: Gradle 中文用户组
 subtitle: "一款简洁而优雅的构建工具."
 description: "基于groovy DSL的后现代脚本化构建工具."
 author: PKAQ
-language: zh-cn
+language: en
 timezone: UTC
 url: https://gradlecn.org
 root: /

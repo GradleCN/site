@@ -11,11 +11,8 @@ title: 跟我学Gradle
 * 业余时间占用（主要是楼主工作上项目时间的占用）
 * ...
 
-###  书籍目录   
-   你可以点击  >> [这里] << 了解本书内容
-   
 ###  如何参与    
-　　star/fork本项目，加入Gradle中文用户组109752483
+　　star/fork本项目，加入Gradle中文用户组 109752483
 
 ###  授权许可   
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">跟我学Gradle</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="gradlecn.org" property="cc:attributionName" rel="cc:attributionURL">Shawn·PKAQ</a> 创作，采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享 署名-非商业性使用-禁止演绎 4.0 国际 许可协议</a>进行许可。

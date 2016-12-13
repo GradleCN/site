@@ -1,6 +1,3 @@
-zh-tw:
-  name: 正體中文
-  disqus_lang: zh_TW
-zh-cn:
+en:
   name: 简体中文
   disqus_lang: zh
