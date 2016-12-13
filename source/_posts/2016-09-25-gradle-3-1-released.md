@@ -1,4 +1,4 @@
-title: Gradle 3.0  正式发布.
+title: Gradle 3.1  正式发布.
 comments: true
 ---
 The Gradle team is pleased to announce Gradle 3.1.

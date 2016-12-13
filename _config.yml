@@ -19,7 +19,7 @@ per_page: 0
 theme: navy
 deploy:
   type: git
-  repo: https://github.com/gradlecn/gradlecn.github.io.git
+  repo: https://github.com/GradleCN/gradlecn.github.io.git
 
 duoshuo: 
 	shortname: gradlecn
